@@ -1,0 +1,4 @@
+interface:
+  display_name: "生成交接"
+  short_description: "先确认停止点；若仍有可委派的收尾、验证或任务拆分，先委派再生成精简、可执行且保留协作约束的工程交接摘要"
+  default_prompt: "先确认当前对话是已收尾，还是停在可说明的停止点；若仍有可委派的收尾、补证、验证或任务拆分，必须先委派再使用 $handoff。生成 handoff 时把继续推进所需的协作约束、执行者分配与恢复后首动作写入 .codex/handoff.md，并报告写入路径。不得用 handoff 替代本轮结论，也不得借 handoff 改写后续协作约束。"
